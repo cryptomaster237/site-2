@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Menu déroulant */
+.menu {
+    position: relative;
+    background: #333;
+    padding: 10px;
+}
+
+.menu-btn {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background: #444;
+    width: 100%;
+}
+
+.menu-list.active {
+    display: block;
+}
+
+.menu-list li {
+    padding: 10px;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Permet d'empiler l'image et son nom */
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 400%;
+}
+
+/* Style du nom sous l'image */
+.image-name {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}

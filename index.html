@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images avec Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <button class="menu-btn">Menu</button>
+        <ul class="menu-list">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <div class="card"><img src="images/bt.webp" alt="BITCOIN">BITCOIN</div>
+        <div class="card"><img src="images/et.jpg" alt="Image 2">ETHEREUM</div>
+        <div class="card"><img src="images/bn.png" alt="Image 3">BNB</div>
+        <div class="card"><img src="images/so.png" alt="Image 4">SOLANA</div>
+        <div class="card"><img src="images/ut.png" alt="Image 5">TETHER</div>
+        <div class="card"><img src="images/rp.png" alt="Image 6">RIPPLE</div>
+    </section>
+
+    <script>
+        document.querySelector(".menu-btn").addEventListener("click", function() {
+            document.querySelector(".menu-list").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
